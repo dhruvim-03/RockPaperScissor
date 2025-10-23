@@ -1,0 +1,88 @@
+body {
+  font-family: "Comic Sans MS", cursive;
+  text-align: center;
+  background: linear-gradient(120deg, #a1c4fd, #c2e9fb, #ff9a9e, #fad0c4);
+  background-size: 400% 400%;
+  animation: bgmove 8s infinite alternate;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes bgmove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+h1 {
+  color: #ff4081;
+  text-shadow: 2px 2px white;
+  font-size: 2.5em;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.player {
+  flex: 1;
+  min-width: 250px;
+}
+
+.choices img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.choices img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ff4081;
+}
+
+.selected {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px gold;
+}
+
+.vs {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.choiceText {
+  font-size: 1.2em;
+  color: #4a148c;
+}
+
+#resultText {
+  margin-top: 20px;
+  font-size: 1.8em;
+  color: #6a1b9a;
+  text-shadow: 1px 1px #fff;
+}
